@@ -1,6 +1,6 @@
 # Tramigo_laravel
 
-To run this project follow the following steps. You should configure .env file to create a connection with your database.
+Please follow the following steps in order to run this project. You should configure .env file to create a connection with your database.
 1. git clone https://github.com/mhjony/Tramigo_laravel.git
 2. cd Tramigo_laravel/laravel_app/
 3. composer i
