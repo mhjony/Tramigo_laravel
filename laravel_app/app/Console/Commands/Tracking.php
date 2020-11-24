@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 
 class Tracking extends Command
 {
@@ -37,7 +38,14 @@ class Tracking extends Command
      */
     public function handle()
     {
-        //open('http://localhost:8000/db');
+        echo "ID\t\tName\t\tLocation\t\tReport Date\n";
+        $results = DB::select('SELECT device.name AS name, report.device_id AS id, 
+            report.location AS Location, report.date_created AS report_date FROM report 
+            JOIN device ON device.id = report.device_id');
+        foreach($results as $result)
+        {
+            echo $result->id."\t\t".$result->name."\t\t".$result->Location."\t\t".$result->report_date."\n";
+        }
         return 0;
     }
 }
