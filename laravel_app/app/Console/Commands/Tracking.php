@@ -44,7 +44,7 @@ class Tracking extends Command
             JOIN device ON device.id = report.device_id');
         foreach($results as $result)
         {
-            echo $result->id."\t\t".$result->name."\t\t".$result->Location."\t\t".$result->report_date."\n";
+            $this->info($result->id."\t\t".$result->name."\t\t".$result->Location."\t\t".$result->report_date."\n");
         }
         return 0;
     }
