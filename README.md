@@ -8,5 +8,5 @@ Please follow the following steps in order to run this project. You should confi
 3. composer i
 4. php artisan track
 
-# Output
+## Output
 ![](https://github.com/mhjony/Tramigo_laravel/blob/master/Output.png)
