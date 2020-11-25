@@ -1,4 +1,4 @@
-# Tramigo_laravel
+# Laravel App
 This app allows you to run artisan custom command.
 
 ## Installation Instructions
