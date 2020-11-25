@@ -1,4 +1,5 @@
 # Tramigo_laravel
+This app allows you to run artisan custom command.
 
 ## Installation Instructions
 Please follow the following steps in order to run this project. You should configure .env file to create a connection with your database.
